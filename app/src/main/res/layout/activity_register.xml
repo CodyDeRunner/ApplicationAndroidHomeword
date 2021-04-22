@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <TextView
+        android:id="@+id/txtBanner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textSize="24sp"
+        android:layout_marginTop="10dp"
+        android:text="Registeration"
+        android:gravity="center"/>
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/edtEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/txtBanner"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:hint="Email"
+        android:layout_marginTop="20dp"
+        tools:layout_editor_absoluteX="73dp"
+        tools:layout_editor_absoluteY="43dp"/>
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/edtPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/edtEmail"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:hint="Password"
+        android:layout_marginTop="5dp"
+        tools:layout_editor_absoluteX="73dp"
+        tools:layout_editor_absoluteY="43dp"/>
+
+    <Button
+        android:id="@+id/btnSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        app:layout_constraintTop_toBottomOf="@id/edtPassword"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"/>
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        app:layout_constraintTop_toBottomOf="@id/edtPassword"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
